@@ -1,0 +1,87 @@
+/* app/globals.css
+   Sitenin tüm sayfalarında geçerli olacak genel stiller burada tanımlanır.
+   Modern ve şık bir arayüz için renkler, gölgeler ve geçişler eklendi.
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #e0e7ff 0%, #f7f7f7 100%);
+  color: #222;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: #1e3a8a;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  box-shadow: 0 2px 12px rgba(30,64,175,0.08);
+  border-radius: 0 0 16px 16px;
+  padding: 1.2rem 0.5rem;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  transition: transform 0.15s;
+}
+
+nav li:hover {
+  transform: scale(1.08);
+}
+
+a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+}
+
+a:hover {
+  background: #fff;
+  color: #1e40af;
+  text-decoration: none;
+}
+
+main {
+  min-height: 70vh;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(30,64,175,0.07);
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.5rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+  a {
+    font-size: 1rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
